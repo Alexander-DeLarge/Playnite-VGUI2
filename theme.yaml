@@ -1,0 +1,9 @@
+ThemeApiVersion: 2.9.0
+Id: VGUI2_1afce00f-81cc-42ef-8deb-fd31cd03e13e
+Name: VGUI2 (OG Steam)
+Author: ADL
+Version: 1.0
+Description: A theme for the old Steam client, based on the VGUI2 design. Includes support for HTLB extension.
+Links:
+- Name: GitHub
+  Url: https://github.com/Alexander-DeLarge/Playnite-VGUI2

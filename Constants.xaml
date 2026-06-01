@@ -1,0 +1,73 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <sys:Double x:Key="FontSizeSmall">11</sys:Double>
+    <sys:Double x:Key="FontSize">12</sys:Double>
+    <sys:Double x:Key="FontSizeLarge">13</sys:Double>
+    <sys:Double x:Key="FontSizeLarger">16</sys:Double>
+    <sys:Double x:Key="FontSizeLargest">18</sys:Double>
+    <FontFamily x:Key="FontFamily">Tahoma</FontFamily>
+    <FontFamily x:Key="MonospaceFontFamily">Consolas</FontFamily>
+    <Thickness x:Key="PopupBorderThickness">1</Thickness>
+    <Thickness x:Key="ControlBorderThickness">1</Thickness>
+    <sys:Double x:Key="EllipseBorderThickness">1</sys:Double>
+    <CornerRadius x:Key="ControlCornerRadius">0</CornerRadius>
+    <Thickness x:Key="SidebarItemPadding">6</Thickness>
+
+    <Color x:Key="BlackColor">#FF000000</Color>
+    <Color x:Key="WhiteColor">#FFFFFFFF</Color>
+    <Color x:Key="TextColor">#FFD8DED3</Color>
+    <Color x:Key="TextColorDarker">#FFA0AA95</Color>
+    <Color x:Key="TextColorDark">#FF75806F</Color>
+    <Color x:Key="MainColor">#FF4C5844</Color>
+    <Color x:Key="MainColorLight">#FF5A6A50</Color>
+    <Color x:Key="MainColorDark">#FF3E4637</Color>
+    <Color x:Key="PlayGreenColor">#FF7EA64B</Color>
+    <Color x:Key="HoverColor">#FF7EA64B</Color>
+    <Color x:Key="GlyphColor">#FFC4B550</Color>
+    <Color x:Key="HighlightGlyphColor">#FFEDF2D4</Color>
+    <Color x:Key="PopupBackgroundColor">#FF4C5844</Color>
+    <Color x:Key="PopupBorderColor">#FF808080</Color>
+    <Color x:Key="BackgroundToneColor">#FF3E4637</Color>
+    <Color x:Key="GridItemBackgroundColor">#FF4C5844</Color>
+    <Color x:Key="PanelSeparatorColor">#FF808080</Color>
+    <Color x:Key="WindowPanelSeparatorColor">#FF808080</Color>
+    <Color x:Key="DataChangeNotifColor">#FFC4B550</Color>
+    <Color x:Key="BorderBright">#FF808080</Color>
+    <Color x:Key="BorderDark">#FF282E22</Color>
+    <Color x:Key="ListSelectionColor">#FF333B30</Color>
+
+    <SolidColorBrush x:Key="ControlBackgroundBrush" Color="{DynamicResource MainColorDark}" />
+    <SolidColorBrush x:Key="TextBrush" Color="{DynamicResource TextColor}" />
+    <SolidColorBrush x:Key="TextBrushDarker" Color="{DynamicResource TextColorDarker}" />
+    <SolidColorBrush x:Key="TextBrushDark" Color="{DynamicResource TextColorDark}" />
+    <SolidColorBrush x:Key="NormalBrush" Color="{DynamicResource MainColor}" />
+    <SolidColorBrush x:Key="NormalBrushLight" Color="{DynamicResource MainColorLight}" />
+    <SolidColorBrush x:Key="NormalBrushDark" Color="{DynamicResource MainColorDark}" />
+    <SolidColorBrush x:Key="NormalBorderBrush" Color="{DynamicResource BorderBright}" />
+    <SolidColorBrush x:Key="BorderDarkBrush" Color="{DynamicResource BorderDark}" />
+    <SolidColorBrush x:Key="PlayGreenBrush" Color="{DynamicResource PlayGreenColor}" />
+    <SolidColorBrush x:Key="ListSelectionBrush" Color="{DynamicResource ListSelectionColor}" />
+    <SolidColorBrush x:Key="HoverBrush" Color="{DynamicResource HoverColor}" />
+    <SolidColorBrush x:Key="GlyphBrush" Color="{DynamicResource GlyphColor}" />
+    <SolidColorBrush x:Key="HighlightGlyphBrush" Color="{DynamicResource HighlightGlyphColor}" />
+    <SolidColorBrush x:Key="PopupBorderBrush" Color="{DynamicResource PopupBorderColor}" />
+    <SolidColorBrush x:Key="TooltipBackgroundBrush" Color="{DynamicResource BackgroundToneColor}" />
+    <SolidColorBrush x:Key="ButtonBackgroundBrush" Color="{DynamicResource MainColorDark}" />
+    <SolidColorBrush x:Key="GridItemBackgroundBrush" Color="{DynamicResource GridItemBackgroundColor}" />
+    <SolidColorBrush x:Key="PanelSeparatorBrush" Color="{DynamicResource PanelSeparatorColor}" />
+    <SolidColorBrush x:Key="WindowPanelSeparatorBrush" Color="{DynamicResource WindowPanelSeparatorColor}" />
+    <SolidColorBrush x:Key="PopupBackgroundBrush" Color="{DynamicResource PopupBackgroundColor}" />
+    <SolidColorBrush x:Key="CheckBoxCheckMarkBkBrush" Color="{DynamicResource MainColor}" />
+    <SolidColorBrush x:Key="DataChangeNotifBrush" Color="{DynamicResource DataChangeNotifColor}" />
+
+    <SolidColorBrush x:Key="PositiveRatingBrush" Color="#FF78FFA0" />
+    <SolidColorBrush x:Key="NegativeRatingBrush" Color="#FFFF6B6B" />
+    <SolidColorBrush x:Key="MixedRatingBrush" Color="#FFFFFCA1" />
+
+    <SolidColorBrush x:Key="WarningBrush" Color="#FFFF6B6B" />
+
+    <SolidColorBrush x:Key="ExpanderBackgroundBrush" Color="{DynamicResource MainColor}" />
+    <SolidColorBrush x:Key="WindowBackgourndBrush" Color="{DynamicResource BackgroundToneColor}" />
+</ResourceDictionary>
