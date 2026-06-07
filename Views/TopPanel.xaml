@@ -196,7 +196,7 @@
                             <SearchBox x:Name="PART_TextMainSearch"
                                         Margin="4,6,0,6" DockPanel.Dock="Left"
                                         WindowChrome.IsHitTestVisibleInChrome="True"
-                                        Width="300" />
+                                        Width="195" />
 
                             <StackPanel x:Name="PART_PanelMainItems" Orientation="Horizontal"
                                         VerticalAlignment="Stretch" Margin="0,6,0,6"/>
@@ -215,7 +215,7 @@
 
                             <StackPanel Orientation="Horizontal" DockPanel.Dock="Left"
                                         HorizontalAlignment="Center" Margin="0,5,0,5">
-                                <Grid MaxWidth="600" MinWidth="300">
+                                <Grid MaxWidth="300" MinWidth="150">
                                     <ProgressBar Name="PART_ProgressGlobal" />
                                     <TextBlock Name="PART_TextProgressText"
                                                VerticalAlignment="Center" HorizontalAlignment="Center"

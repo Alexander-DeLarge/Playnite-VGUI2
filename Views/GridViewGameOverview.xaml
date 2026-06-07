@@ -114,7 +114,15 @@
                                                     ColumnCount="2" StarColumns="1"
                                                     RowCount="25" AutoLayoutColumns="2">
                                                 <Grid.Resources>
-                                                    <Style TargetType="TextBlock" BasedOn="{StaticResource BaseTextBlockStyle}" />
+                                                    <Style TargetType="TextBlock" BasedOn="{StaticResource BaseTextBlockStyle}">
+                                                        <Setter Property="Margin" Value="5,0,0,0" />
+                                                    </Style>
+                                                    <Style TargetType="Button" BasedOn="{StaticResource {x:Type Button}}">
+                                                        <Setter Property="Margin" Value="5,0,0,0" />
+                                                    </Style>
+                                                    <Style TargetType="ItemsControl">
+                                                        <Setter Property="Margin" Value="5,0,0,0" />
+                                                    </Style>
                                                 </Grid.Resources>
 
                                                 <Label Name="PART_ElemAdded" Content="{DynamicResource LOCDateAddedLabel}" />
