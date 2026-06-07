@@ -20,11 +20,12 @@
     <Color x:Key="TextColor">#FFD8DED3</Color>
     <Color x:Key="TextColorDarker">#FFA0AA95</Color>
     <Color x:Key="TextColorDark">#FF75806F</Color>
+    <Color x:Key="SelectionTextColor">#FFC4A242</Color>
     <Color x:Key="MainColor">#FF4C5844</Color>
     <Color x:Key="MainColorLight">#FF5A6A50</Color>
     <Color x:Key="MainColorDark">#FF3E4637</Color>
     <Color x:Key="PlayGreenColor">#FF7EA64B</Color>
-    <Color x:Key="HoverColor">#FF7EA64B</Color>
+    <Color x:Key="HoverColor">#FF4C5844</Color>
     <Color x:Key="GlyphColor">#FFC4B550</Color>
     <Color x:Key="HighlightGlyphColor">#FFEDF2D4</Color>
     <Color x:Key="PopupBackgroundColor">#FF4C5844</Color>
@@ -36,7 +37,7 @@
     <Color x:Key="DataChangeNotifColor">#FFC4B550</Color>
     <Color x:Key="BorderBright">#FF808080</Color>
     <Color x:Key="BorderDark">#FF282E22</Color>
-    <Color x:Key="ListSelectionColor">#FF333B30</Color>
+    <Color x:Key="ListSelectionColor">#FF4C5844</Color>
 
     <SolidColorBrush x:Key="ControlBackgroundBrush" Color="{DynamicResource MainColorDark}" />
     <SolidColorBrush x:Key="TextBrush" Color="{DynamicResource TextColor}" />
@@ -49,6 +50,7 @@
     <SolidColorBrush x:Key="BorderDarkBrush" Color="{DynamicResource BorderDark}" />
     <SolidColorBrush x:Key="PlayGreenBrush" Color="{DynamicResource PlayGreenColor}" />
     <SolidColorBrush x:Key="ListSelectionBrush" Color="{DynamicResource ListSelectionColor}" />
+    <SolidColorBrush x:Key="SelectionTextBrush" Color="{DynamicResource SelectionTextColor}" />
     <SolidColorBrush x:Key="HoverBrush" Color="{DynamicResource HoverColor}" />
     <SolidColorBrush x:Key="GlyphBrush" Color="{DynamicResource GlyphColor}" />
     <SolidColorBrush x:Key="HighlightGlyphBrush" Color="{DynamicResource HighlightGlyphColor}" />

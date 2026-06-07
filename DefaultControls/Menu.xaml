@@ -43,13 +43,13 @@
         <Border x:Name="Border">
             <Grid>
                 <Border x:Name="HoverBorder" Background="{DynamicResource HoverBrush}" Visibility="Collapsed"  />
-                <TextBlock VerticalAlignment="Center" Padding="5" Style="{DynamicResource BaseTextBlockStyle}"
+                <TextBlock x:Name="HeaderText" VerticalAlignment="Center" Padding="5" Style="{DynamicResource BaseTextBlockStyle}"
                            Foreground="{TemplateBinding Foreground}">
                     <ContentPresenter ContentSource="Header" RecognizesAccessKey="True" />
                 </TextBlock>
                 <Popup Placement="Bottom" IsOpen="{TemplateBinding IsSubmenuOpen}" AllowsTransparency="True" Focusable="False">
                     <Border SnapsToDevicePixels="True" BorderBrush="{DynamicResource PopupBorderBrush}"
-                            Background="{DynamicResource PopupBackgroundBrush}" BorderThickness="{DynamicResource PopupBorderThickness}">
+                            Background="{DynamicResource ControlBackgroundBrush}" BorderThickness="{DynamicResource PopupBorderThickness}">
                         <StackPanel Grid.IsSharedSizeScope="True" IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Cycle" />
                     </Border>
                 </Popup>
@@ -58,6 +58,7 @@
         <ControlTemplate.Triggers>
             <Trigger Property="IsHighlighted" Value="True">
                 <Setter Property="Visibility" Value="Visible" TargetName="HoverBorder" />
+                <Setter Property="Foreground" Value="{DynamicResource SelectionTextBrush}" TargetName="HeaderText" />
             </Trigger>
         </ControlTemplate.Triggers>
     </ControlTemplate>
@@ -65,7 +66,7 @@
     <!-- TopLevelItem -->
     <ControlTemplate x:Key="{x:Static MenuItem.TopLevelItemTemplateKey}" TargetType="{x:Type MenuItem}">
         <Border x:Name="Border" BorderBrush="{DynamicResource PopupBorderBrush}"
-                Background="{DynamicResource PopupBackgroundBrush}" BorderThickness="{DynamicResource PopupBorderThickness}">
+                Background="{DynamicResource ControlBackgroundBrush}" BorderThickness="{DynamicResource PopupBorderThickness}">
             <ContentPresenter ContentSource="Header" RecognizesAccessKey="True" />
         </Border>
     </ControlTemplate>
@@ -88,7 +89,7 @@
                   Margin="5,0,-5,0" VerticalAlignment="Center">
                 <TextBlock FontFamily="Marlett" Text="a" VerticalAlignment="Center" Style="{DynamicResource BaseTextBlockStyle}" />
             </Grid>
-            <TextBlock Grid.Column="1" Padding="5" VerticalAlignment="Center" Style="{DynamicResource BaseTextBlockStyle}"
+            <TextBlock x:Name="HeaderText" Grid.Column="1" Padding="5" VerticalAlignment="Center" Style="{DynamicResource BaseTextBlockStyle}"
                        Foreground="{TemplateBinding Foreground}">
                 <ContentPresenter RecognizesAccessKey="True" Margin="5,0,5,0" ContentSource="Header"/>
             </TextBlock>
@@ -100,7 +101,7 @@
             </Grid>
             <Popup IsOpen="{Binding Path=IsSubmenuOpen, RelativeSource={RelativeSource TemplatedParent}}" Placement="Right"
                    Focusable="False" AllowsTransparency="True">
-                <Border BorderBrush="{DynamicResource PopupBorderBrush}" Background="{DynamicResource PopupBackgroundBrush}"
+                <Border BorderBrush="{DynamicResource PopupBorderBrush}" Background="{DynamicResource ControlBackgroundBrush}"
                         BorderThickness="{DynamicResource PopupBorderThickness}">
                     <ScrollViewer HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
                         <StackPanel Grid.IsSharedSizeScope="True" IsItemsHost="True" KeyboardNavigation.DirectionalNavigation="Cycle" />
@@ -118,6 +119,7 @@
             </Trigger>
             <Trigger Property="IsHighlighted" Value="True">
                 <Setter Property="Visibility" Value="Visible" TargetName="HoverBorder" />
+                <Setter Property="Foreground" Value="{DynamicResource SelectionTextBrush}" TargetName="HeaderText" />
             </Trigger>
             <Trigger Property="InputGestureText" Value="">
                 <Setter Property="Visibility" Value="Collapsed" TargetName="GestureText" />
@@ -140,7 +142,7 @@
                 <Grid x:Name="GlyphPanel" Grid.Column="0" Visibility="Collapsed" Margin="5,0,-5,0" VerticalAlignment="Center">
                     <TextBlock FontFamily="Marlett" Text="a" VerticalAlignment="Center" Style="{DynamicResource BaseTextBlockStyle}" />
                 </Grid>
-                <TextBlock VerticalAlignment="Center" Grid.Column="1" Margin="5,0,5,0" Padding="5" Style="{DynamicResource BaseTextBlockStyle}"
+                <TextBlock x:Name="HeaderText" VerticalAlignment="Center" Grid.Column="1" Margin="5,0,5,0" Padding="5" Style="{DynamicResource BaseTextBlockStyle}"
                            Foreground="{TemplateBinding Foreground}">
                     <ContentPresenter RecognizesAccessKey="True" ContentSource="Header"/>
                 </TextBlock>
@@ -156,6 +158,9 @@
             <Trigger Property="IsChecked" Value="True">
                 <Setter Property="Visibility" Value="Visible" TargetName="GlyphPanel" />
                 <Setter Property="Visibility" Value="Collapsed" TargetName="Icon" />
+            </Trigger>
+            <Trigger Property="IsHighlighted" Value="True">
+                <Setter Property="Foreground" Value="{DynamicResource SelectionTextBrush}" TargetName="HeaderText" />
             </Trigger>
             <Trigger Property="IsHighlighted" Value="False">
                 <Setter Property="Background" Value="Transparent" TargetName="HoverBorder" />
