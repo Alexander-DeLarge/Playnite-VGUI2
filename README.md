@@ -1,5 +1,9 @@
 # Playnite-VGUI2
 
+<p align="center">
+  <img src="Screenshots/LOGO.jpg" alt="VGUI2 Logo" width="256">
+</p>
+
 A Playnite Desktop theme inspired by the classic Valve VGUI aesthetic.
 
 ## Features
@@ -9,6 +13,24 @@ A Playnite Desktop theme inspired by the classic Valve VGUI aesthetic.
 * Themed Library, Grid, List, Search, Details, Sidebar, and Panel views
 * Custom game presentation elements and layouts
 * Bundled fonts, icons, imagery, and HTML templates
+
+## Screenshots
+
+### Details View
+
+![Details View](Screenshots/DETAIL.png)
+
+### Grid View
+
+![Grid View](Screenshots/GRID.jpg)
+
+### List View
+
+![List View](Screenshots/LIST.png)
+
+### Settings
+
+![Settings](Screenshots/SETTINGS.png)
 
 ## Notes
 
