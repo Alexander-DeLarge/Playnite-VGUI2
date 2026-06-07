@@ -1,4 +1,4 @@
-# VGUI2
+# Playnite-VGUI2
 
 A Playnite Desktop theme inspired by the classic Valve VGUI aesthetic.
 
